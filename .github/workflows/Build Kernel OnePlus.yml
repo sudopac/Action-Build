@@ -1070,6 +1070,20 @@ jobs:
             set_config "CONFIG_NETFILTER_XT_TARGET_REJECT=y"
             set_config "CONFIG_NETFILTER_XT_TARGET_LOG=y"
             set_config "CONFIG_NETFILTER_XT_MATCH_RECENT=y"
+            set_config "CONFIG_CFS_BANDWIDTH=y"
+            set_config "CONFIG_CGROUP_PIDS=y"
+            set_config "CONFIG_CGROUP_DEVICE=y"
+            set_config "CONFIG_CGROUP_DEVICE=y"
+            set_config "CONFIG_CGROUP_CPUACCT=y"
+            set_config "CONFIG_CGROUP_FREEZER=y"
+            set_config "CONFIG_CGROUP_NET_PRIO=y"
+            set_config "CONFIG_OVERLAY_FS=y"
+            set_config "CONFIG_SECCOMP=y"
+            set_config "CONFIG_SECCOMP_FILTER=y"
+            # 性能与系统补充优化
+            set_config "CONFIG_TCP_ADVANCED_WINDOW_SCALING=y"
+            set_config "CONFIG_FW_LOADER_COMPRESS=y"
+            set_config "CONFIG_STRICT_DEVMEM=y"
           fi
 
           # IPSET & IPv6_NAT & TTL配置*
@@ -1107,6 +1121,10 @@ jobs:
             set_config "CONFIG_IP6_NF_MATCH_HL=y"
             set_config "CONFIG_IP_NF_MANGLE=y"
             set_config "CONFIG_IP6_NF_MANGLE=y"
+            set_config "CONFIG_NETFILTER_XT_TARGET_CHECKSUM=y"
+            set_config "CONFIG_IP_NF_TARGET_SYNPROXY=y"
+            set_config "CONFIG_STRICT_DEVMEM=y"
+            set_config "CONFIG_NETFILTER_XT_TARGET_TCPMSS=y"
           fi
 
           # 构建依赖项调整及优化
